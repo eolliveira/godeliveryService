@@ -71,6 +71,8 @@ INSERT INTO tb_order_item (price, quantity, product_id, order_id) VALUES (1850.0
 INSERT INTO tb_order_item (price, quantity, product_id, order_id) VALUES (100.99, 2, 5, 2);
 INSERT INTO tb_order_item (price, quantity, product_id, order_id) VALUES (90.5, 1, 15, 3);
 
+INSERT INTO tb_payment (moment, order_id) VALUES (NOW(), 2);
+
 -- INSERT INTO tb_role (authority) VALUES ('ROLE_OPERATOR');
 -- INSERT INTO tb_role (authority) VALUES ('ROLE_ADMIN');
 --
