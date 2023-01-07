@@ -19,10 +19,6 @@ public class Category {
 
     public Category() {}
 
-    public Set<Product> getProducts() {
-        return products;
-    }
-
     public Category(Long id, String name) {
         this.id = id;
         this.name = name;
@@ -43,4 +39,8 @@ public class Category {
     public void setName(String name) {
         this.name = name;
     }
+    public Set<Product> getProducts() {
+        return products;
+    }
+
 }

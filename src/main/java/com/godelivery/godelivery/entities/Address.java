@@ -68,4 +68,8 @@ public class Address {
     public void setComplement(String complement) {
         this.complement = complement;
     }
+
+    public User getClient() {
+        return client;
+    }
 }

@@ -22,11 +22,13 @@ public class User {
     private String password;
 
     @OneToMany(mappedBy = "client")
+    private List<Order> orders = new ArrayList<>();
+
+    @OneToMany(mappedBy = "client")
     private List<Address> adresses = new ArrayList<>();
 
     public User() {
     }
-
 
     public User(Long id, String firstName, String lastName, LocalDate birthDate, String phone, String email, String password) {
         this.id = id;
@@ -99,4 +101,7 @@ public class User {
     }
 
 
+    public List<Order> getOrders() {
+        return orders;
+    }
 }
