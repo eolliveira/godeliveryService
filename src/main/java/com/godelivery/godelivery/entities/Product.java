@@ -24,12 +24,11 @@ public class Product {
             joinColumns = @JoinColumn(name = "product_id"),
             inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories = new HashSet<>();
-
-    public Product() {
-    }
-
     public Set<Category> getCategories() {
         return categories;
+    }
+
+    public Product() {
     }
 
     public Product(Long id, String name, String description, Double price, Double deliveryPrice, Integer preparationTime) {
