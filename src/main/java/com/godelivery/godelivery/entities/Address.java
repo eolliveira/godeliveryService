@@ -1,6 +1,6 @@
 package com.godelivery.godelivery.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "tb_address")

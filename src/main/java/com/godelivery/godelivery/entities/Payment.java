@@ -1,7 +1,6 @@
 package com.godelivery.godelivery.entities;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.time.Instant;
 
 @Entity
@@ -19,7 +18,8 @@ public class Payment {
     @MapsId
     private Order order;
 
-    public Payment() {}
+    public Payment() {
+    }
 
     public Payment(Long id, Instant moment, Order order) {
         this.id = id;

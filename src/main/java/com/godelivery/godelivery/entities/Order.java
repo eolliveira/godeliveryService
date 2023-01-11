@@ -1,7 +1,6 @@
 package com.godelivery.godelivery.entities;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.time.Instant;
 
 @Entity

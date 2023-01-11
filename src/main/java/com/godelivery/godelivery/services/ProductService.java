@@ -3,12 +3,12 @@ package com.godelivery.godelivery.services;
 import com.godelivery.godelivery.dto.ProductDTO;
 import com.godelivery.godelivery.entities.Product;
 import com.godelivery.godelivery.repositories.ProductRepository;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
